@@ -1,127 +1,137 @@
 * {
-	padding: 0;
-	margin: 0;
-	box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-
 body {
-	background: #F5F7FB;
-	font-family: 'Lato', sans-serif;
-	color: #FFFFFF;
+  background: #f5f7fb;
+  font-family: "Lato", sans-serif;
+  color: #ffffff;
 }
 
 a {
-	text-decoration: none;
+  text-decoration: none;
 }
 
 .contenedor {
-	width: 90%;
-	max-width: 1000px;
-	margin: auto;
+  width: 90%;
+  max-width: 1000px;
+  margin: auto;
 }
 
 /* * ----- ----- ----- HEADER ----- ----- ----- */
 
 header {
-	min-height: 40vh;
-	background: #232533;
-	display: flex;
-	align-items: center;
-	text-align: center;
+  min-height: 40vh;
+  background: #232533;
+  display: flex;
+  align-items: center;
+  text-align: center;
 }
 
 header .logotipo {
-	color: #B1B2C9;
-	font-size: 24px;
-	margin-bottom: 40px;
+  color: #b1b2c9;
+  font-size: 24px;
+  margin-bottom: 40px;
 }
 
 header .slogan {
-	font-size: 35px;
-	margin-bottom: 40px;
+  font-size: 35px;
+  margin-bottom: 40px;
 }
 
 header .contenedor-botones {
-	display: flex;
-	justify-content: center;
-	gap: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
 }
 
 header .btn {
-	display: inline-block;
-	padding: 15px 20px;
-	text-transform: uppercase;
-	color: #FFFFFF;
-	border-radius: 5px;
-	transition: .3s ease all;
+  display: inline-block;
+  padding: 15px 20px;
+  text-transform: uppercase;
+  color: #ffffff;
+  border-radius: 5px;
+  transition: 0.3s ease all;
 }
 
 header .btn.primario {
-	background: #505EF4;
+  background: #505ef4;
 }
 header .btn.primario:hover {
-	background: #3041F8;
+  background: #3041f8;
 }
 
 header .btn.secundario {
-	background: #B1B2C9;
+  background: #b1b2c9;
 }
 header .btn.secundario:hover {
-	background: #888AB7;
+  background: #888ab7;
 }
 
 /* * ----- ----- ----- MAIN ----- ----- ----- */
 main .contenedor {
-	padding: 40px 0;
-	display: grid;
-	grid-gap: 20px;
-	grid-template-columns: 1fr 1fr 1fr;
+  padding: 40px 0;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
 main .card {
-	background: #FFFFFF;
-	color: #232533;
-	padding: 20px;
-	border-radius: 5px;
-	box-shadow: 0px 0px 50px rgba(0,0,0,.1)
+  background: #ffffff;
+  color: #232533;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.1);
 }
 
 main .card img {
-	width: 100%;
-	margin-bottom: 20px;
+  width: 100%;
+  margin-bottom: 20px;
 }
 
 main .card .texto {
-	margin-bottom: 20px;
-	line-height: 27px;
+  text-align: justify;
+  margin-bottom: 20px;
+  line-height: 27px;
 }
 
 main .card .contenedor-botones {
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	grid-gap: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
 }
 
 main .card .btn {
-	display: inline-block;
-	padding: 10px 20px;
-	text-transform: uppercase;
-	color: #FFFFFF;
-	border-radius: 5px;
-	transition: .3s ease all;
+  display: inline-block;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  color: #ffffff;
+  border-radius: 5px;
+  transition: 0.3s ease all;
 }
 
 main .card .btn.primario {
-	background: #505EF4;
+  background: #505ef4;
 }
 main .card .btn.primario:hover {
-	background: #3041F8;
+  background: #3041f8;
 }
 
 main .card .btn.secundario {
-	background: #B1B2C9;
+  background: #b1b2c9;
 }
 main .card .btn.secundario:hover {
-	background: #888AB7;
+  background: #888ab7;
+}
+
+@media (max-width: 30.625em) {
+  main .contenedor {
+    display: block;
+    /* grid-template-columns: 1fr; */
+  }
+  header .contenedor-botones {
+    margin-bottom: 2em;
+  }
 }
