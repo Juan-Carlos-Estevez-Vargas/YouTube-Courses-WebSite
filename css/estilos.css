@@ -129,7 +129,6 @@ main .card .btn.secundario:hover {
 @media (max-width: 30.625em) {
   main .contenedor {
     display: block;
-    /* grid-template-columns: 1fr; */
   }
   header .contenedor-botones {
     margin-bottom: 2em;
